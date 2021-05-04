@@ -9,6 +9,7 @@ public class LossScript : MonoBehaviour
     public Transform level1TP;
     public Transform level2TP;
     public Transform level3TP;
+    public Transform level4TP;
 
     public GameObject player;
     public Rigidbody rb;
@@ -42,6 +43,9 @@ public class LossScript : MonoBehaviour
                     break;
                 case 2:
                     player.transform.position = level3TP.position;
+                    break;
+                case 3:
+                    player.transform.position = level4TP.position;
                     break;
             }
             rb.velocity = Vector3.zero;

@@ -8,6 +8,7 @@ public class CutSceneButton : MonoBehaviour
     public KeyCode _Key;
     private Button _button;
 
+    
 
     void Awake()
     {
