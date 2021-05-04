@@ -54,6 +54,10 @@ public class FrameTP : MonoBehaviour
 
                 rb.angularVelocity = Vector3.zero;
                 rb.velocity = Vector3.zero;
+                if (mover.gravity.y > 0)
+                {
+                    mover.gravity *= -1;
+                }
 
 
             }
